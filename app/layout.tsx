@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className}`}>
+        {children}
+        <div className="absolute inset-0 -z-10 blur-3xl">
+          <div className="animate-left absolute left-0 top-0 -z-50 h-[500px] w-[500px] rounded-full bg-gradient-to-t from-[#d175b542] to-[#183069]"></div>
+          <div className="animate-right absolute bottom-0 delay-500 right-0 -z-50 h-[500px] w-[500px] rounded-full bg-gradient-to-l from-[#d175b542] to-[#183069]"></div>
+        </div>
+      </body>
     </html>
   );
 }
