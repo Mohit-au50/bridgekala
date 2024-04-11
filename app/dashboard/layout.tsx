@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="w-full max-w-[240px]">
           <SideBar />
         </div>
-        <div className="h-full w-full overflow-hidden rounded-2xl border-2 border-[#d175b6]">
+        <div className="h-full w-full overflow-hidden rounded-2xl border-2 border-primary">
           {children}
         </div>
       </div>
