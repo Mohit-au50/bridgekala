@@ -78,11 +78,15 @@ export default function page({}: Props) {
                   {Array.from({ length: 4 }).map((_, index) => (
                     <div
                       key={index}
-                      className="rounded-xl border-2 border-primary p-2.5"
+                      className={`${index === 0 && "bg-primary"} rounded-xl border-2 border-primary p-2.5`}
                     >
                       <p className="text-sm">
                         Meeting Room {index + 1}{" "}
-                        <span className="text-primary">12 Positions</span>
+                        <span
+                          className={`${index === 0 && "text-white"} text-primary`}
+                        >
+                          12 Positions
+                        </span>
                       </p>
                       <p className="text-[10px]">
                         Start from 12 Jan, 2024 - End at 15 Jan, 2024
