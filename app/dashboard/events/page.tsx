@@ -1,11 +1,9 @@
 "use client";
 import Navbar from "@/app/ui/events/navbar";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import React, { useState } from "react";
+import { useState } from "react";
 
-type Props = {};
-
-export default function page({}: Props) {
+export default function Page() {
   const [activeIndex, setActiveIndex] = useState<number>(1);
   const handleNavClick = (index: number) => {
     setActiveIndex(index);
